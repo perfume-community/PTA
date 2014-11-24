@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "PTALoginController.h"
+#import "PTABlogListController.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +17,28 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application: (UIApplication *)application didFinishLaunchingWithOptions: (NSDictionary *)launchOptions
+{
+    UITabBarController *tab = [[UITabBarController alloc] init];
+    tab.view.backgroundColor = [UIColor whiteColor];
+    
+    PTABlogListController *blogList = [[PTABlogListController alloc] initWithStyle: UITableViewStylePlain];
+    UINavigationController *blogNav = [[UINavigationController alloc] initWithRootViewController: blogList];
+    blogNav.tabBarItem.image = [UIImage imageNamed: @"Gurun"];
+    blogNav.tabBarItem.selectedImage = [UIImage imageNamed: @"Gurun-selected"];
+    blogNav.tabBarItem.title = NSLocalizedString(@"Blog", nil);
+    
+    UITableViewController *newsList = [[UITableViewController alloc] initWithStyle: UITableViewStylePlain];
+    UINavigationController *newsNav = [[UINavigationController alloc] initWithRootViewController: newsList];
+    newsNav.tabBarItem.image = [UIImage imageNamed: @"News"];
+    newsNav.tabBarItem.selectedImage = [UIImage imageNamed: @"News-selected"];
+    newsNav.tabBarItem.title = NSLocalizedString(@"News", nil);
+    
+    tab.viewControllers = @[blogNav, newsNav];
+    
+    self.window.rootViewController = tab;
+    [self.window addSubview: tab.view];
+
     return YES;
 }
 

@@ -1,0 +1,69 @@
+PODS:
+  - ErrorKit (0.3.1):
+    - ErrorKit/Default
+  - ErrorKit/Additions (0.3.1):
+    - ErrorKit/UIKit
+  - ErrorKit/Core (0.3.1)
+  - ErrorKit/Default (0.3.1):
+    - ErrorKit/Additions
+    - ErrorKit/HTTP
+    - ErrorKit/JSONValues
+    - ErrorKit/NSException
+  - ErrorKit/HTTP (0.3.1):
+    - ErrorKit/Core
+  - ErrorKit/JSONValues (0.3.1):
+    - ErrorKit/NSException
+  - ErrorKit/NSException (0.3.1):
+    - ErrorKit/Core
+  - ErrorKit/UIKit (0.3.1):
+    - ErrorKit/Core
+  - MBProgressHUD (0.9)
+  - NSCollectionAddition (1.0)
+  - NSURL+QueryDictionary (1.0.3)
+  - OCGumbo (0.1.1):
+    - OCGumbo/Gumbo
+  - OCGumbo/Gumbo (0.1.1)
+  - ReactiveCocoa (2.3.1):
+    - ReactiveCocoa/UI
+  - ReactiveCocoa/Core (2.3.1):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.3.1)
+  - ReactiveCocoa/UI (2.3.1):
+    - ReactiveCocoa/Core
+  - SSKeychain (1.2.2)
+  - STHTTPRequest (1.0.2)
+  - TMCache (1.2.2)
+  - UIAlertView+Blocks (0.8.1)
+
+DEPENDENCIES:
+  - ErrorKit (~> 0.3.1)
+  - MBProgressHUD (~> 0.8)
+  - NSCollectionAddition (from `https://github.com/yllan/NSCollectionAddition.git`)
+  - NSURL+QueryDictionary
+  - OCGumbo (from `https://github.com/vlprans/OCGumbo.git`)
+  - ReactiveCocoa (~> 2.3.1)
+  - SSKeychain
+  - STHTTPRequest (~> 1.0)
+  - TMCache
+  - UIAlertView+Blocks (~> 0.8.1)
+
+EXTERNAL SOURCES:
+  NSCollectionAddition:
+    :git: https://github.com/yllan/NSCollectionAddition.git
+  OCGumbo:
+    :git: https://github.com/vlprans/OCGumbo.git
+    :submodules: true
+
+SPEC CHECKSUMS:
+  ErrorKit: f3f5cbfd4c90310aa542d91f8e4ccb6ba5b11e93
+  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
+  NSCollectionAddition: 194f90bbf0f5ed32a372fcaf54580dd53e93c9fe
+  NSURL+QueryDictionary: 1ad81be60c10e3f4d80c5c4beb7125de96aaec5e
+  OCGumbo: 633e8b8d7a09755d2c2bac3623df03431de238e1
+  ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
+  SSKeychain: cc48bd3ad24fcd9125adb9e0d23dd50b8bbd08b9
+  STHTTPRequest: 9aee3fd1557dcaa380198a9e56d36527ede342d1
+  TMCache: e2c9225de7a107b529d1d04baa58eb5eab3051f3
+  UIAlertView+Blocks: 0b749f1f7bd5131ff2233b30a406c1585a7171b2
+
+COCOAPODS: 0.34.4
